@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+echo "\
+    curl \
+    zip \
+    unzip \
+    sed" >> /mod-repo-packages-to-install.list

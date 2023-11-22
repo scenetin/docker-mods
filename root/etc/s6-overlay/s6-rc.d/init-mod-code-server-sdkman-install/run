@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+if [ -z "$SDKMAN_DIR" ]; then
+    echo "**** Installing SDKMAN! ****"
+    curl -s "https://get.sdkman.io" | bash
+
+    echo "**** Loading SDKMAN! ****"
+    source $HOME/.sdkman/bin/sdkman-init.sh
+else
+    echo "**** SDKMAN! is already installed, skipping ****"
+fi
